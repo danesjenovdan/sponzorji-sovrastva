@@ -97,6 +97,7 @@ body {
     font-size: 30px;
     letter-spacing: 9.74px;
     padding: 40px;
+    margin-top: 100px;
 
     #footershare {
       border: 5px solid #ffffff;

@@ -18,6 +18,7 @@
       emailContent="I am the email content"
       link="https://danesjenovdan.si/thelink"
     />
+    <p class="text">Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo. Podjetja cenijo svoj ugled, pritisk javnosti deluje. <strong>Deli razglednico</strong> in pomagaj ustaviti</p>
     <div class="divider"></div>
     <razglednica
       imgSrc="https://placekitten.com/1600/800"
@@ -26,6 +27,7 @@
       emailContent="I am the email content"
       link="https://danesjenovdan.si/thelink"
     />
+    <p class="text">Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo. Podjetja cenijo svoj ugled, pritisk javnosti deluje. <strong>Deli razglednico</strong> in pomagaj ustaviti</p>
     <div class="divider"></div>
     <razglednica
       imgSrc="https://placekitten.com/1600/800"
@@ -34,6 +36,7 @@
       emailContent="I am the email content"
       link="https://danesjenovdan.si/thelink"
     />
+    <p class="text">Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo. Podjetja cenijo svoj ugled, pritisk javnosti deluje. <strong>Deli razglednico</strong> in pomagaj ustaviti</p>
   </div>
 </template>
 
@@ -99,7 +102,8 @@ $black: #363636;
     background-color: $black;
     position: relative;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 120px;
   }
 
   .text {
