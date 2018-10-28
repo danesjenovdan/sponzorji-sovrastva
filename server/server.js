@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const cheerio = require('cheerio');
 const fs = require('fs');
-const config = require('./config');
 const request = require('request-promise-native');
 const ejs = require('ejs');
 const webshot = require('webshot');
@@ -14,7 +13,7 @@ const indexFile = fs.readFileSync(`${__dirname}/../pokrovitelji/dist/index.html`
 const indexHtml = indexFile.toString();
 
 // DO THIS FOR EVERY SPECIFIC SPONSOR
-app.get('/sponzorji/triglav', async (req, res) => {
+app.get('/pokrovitelji/triglav', async (req, res) => {
 
   try {
     const $ = cheerio.load(indexHtml);
@@ -22,7 +21,7 @@ app.get('/sponzorji/triglav', async (req, res) => {
     $('title').text('TRIGLAV OG TEXT');
     $('.removeme').remove();
     $('head').append(`
-      <meta property="og:url" content="https://danesjenovdan.si/sponzorji/triglav" />
+      <meta property="og:url" content="https://danesjenovdan.si/pokrovitelji/triglav" />
       <meta property="og:title" content="TRIGLAV TITLE" />
       <meta name="twitter:title" content="TRIGLAV TITLE">
 
@@ -42,8 +41,8 @@ app.get('/sponzorji/triglav', async (req, res) => {
 
 });
 
-app.use('/', express.static(`${__dirname}/../besedogled/dist`));
+app.use('/pokrovitelji', express.static(`${__dirname}/../pokrovitelji/dist`));
 
 app.listen(7001, () => {
-  console.log('Server listening on port 7061');
+  console.log('Server listening on port 7001');
 });
