@@ -1,0 +1,21 @@
+{
+  "name": "OGservver",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "echo \"Error: no start specified\" && exit 1",
+    "deploy": "echo \"Error: no deploy specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danes je nov dan <filip@danesjenovdan.si>",
+  "license": "Unlicense",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "webshot": "^0.18.0"
+  }
+}
