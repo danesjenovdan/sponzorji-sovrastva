@@ -128,6 +128,7 @@ body {
         bottom: 0;
         left: 0;
         opacity: 0;
+        display: none;
         background-color: $black;
         transition: all 0.3s;
 
@@ -164,6 +165,7 @@ body {
       &:hover {
         .back {
           opacity: 1;
+          display: block;
         }
       }
     }

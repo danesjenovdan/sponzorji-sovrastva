@@ -94,6 +94,7 @@ export default {
   .shares {
     max-width: 100%;
     opacity: 0;
+    display: none;
 
     position: absolute;
     top: 40%;
@@ -170,6 +171,7 @@ export default {
     }
     .shares {
       opacity: 1;
+      display: block;
     }
     .badge {
       opacity: 0;
