@@ -29,64 +29,14 @@
         :emailContent="rzg.tweet"
         :link="getShareLink(rzg.link)"
       />
-      <p class="text" v-html="addTweetLinks(`${rzg.tweet} ${hashtag}`)"></p>
+      <p class="text" v-text="`${rzg.tweet} ${hashtag}`"></p>
     </div>
   </div>
 </template>
 
 <script>
 import Razglednica from './Razglednica.vue';
-
-const razglednice = [
-  {
-    name: 'TELEKOM',
-    imgSrc: 'boter-telekom.jpg',
-    tweet: 'Nove ugodnosti za naše zveste bele naročnike. Poveži se s paketom RASIZEM! Več informacij pri našem partnerju @Demokracija1.',
-    link: 'telekom',
-  },
-  {
-    name: 'POŠTA',
-    imgSrc: 'boter-posta.jpg',
-    tweet: 'Pošlji sovraštvo s pomočjo @nova24! S @posta_slovenije hitro, varno in ugodno.',
-    link: 'posta',
-  },
-  {
-    name: 'T-2',
-    imgSrc: 'boter-t2.jpg',
-    tweet: 'Reši T-2 pred stečajem in preženi migrante s slovenskih izobraževalnih institucij!',
-    link: 't2',
-  },
-  {
-    name: 'TRIGLAV',
-    imgSrc: 'boter-triglav.jpg',
-    tweet: 'Zavaruj se pred grozotami LGBT! Novi paket @triglavgroup te brani s pomočjo @nova24.',
-    link: 'triglav',
-  },
-  {
-    name: 'MERCATOR',
-    imgSrc: 'boter-mercator.jpg',
-    tweet: 'Radi imamo domače! Vaš najbolj nestrpen sosed @mercator_sl! @nova24',
-    link: 'mercator',
-  },
-  {
-    name: 'TELEMACH',
-    imgSrc: 'boter-telemach.jpg',
-    tweet: 'Novi paketi @TelemachSi Še več, zdaj z neomejenimi količinami sovraštva in nestrpnosti @nova24.',
-    link: 'telemach',
-  },
-  {
-    name: 'PETROL',
-    imgSrc: 'boter-petrol.jpg',
-    tweet: 'Laž za življenje! @petrol in @Demokracija1.',
-    link: 'petrol',
-  },
-  {
-    name: 'SLOVENSKE ŽELEZNICE',
-    imgSrc: 'boter-zeleznice.jpg',
-    tweet: 'S histerijo lažje in hitreje po Sloveniji! Potovanje omogočata @slozeleznice in @nova24.',
-    link: 'slovenske-zeleznice',
-  },
-];
+import { razglednice } from '../assets/razglednice.json';
 
 export default {
   name: 'vse',
@@ -103,16 +53,7 @@ export default {
   },
   methods: {
     getShareLink(link) {
-      if (typeof window !== 'undefined') {
-        const loc = window.location;
-        return `${loc.origin}${this.baseUrl}${link}`;
-      }
-      return '';
-    },
-    addTweetLinks(text) {
-      return String(text);
-      // .replace(/#([^,;.'" ]+)/g, '<strong>#$1</strong>')
-      // .replace(/(^|[^@\w])@(\w{1,15})\b/g, '$1<a href="https://twitter.com/$2" target="_blank" rel="noopener noreferrer">@$2</a>');
+      return `https://danesjenovdan.si${this.baseUrl}${link}`;
     },
   },
 };
@@ -130,6 +71,8 @@ $black: #363636;
 
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
+
+  overflow-x: hidden;
 
   strong {
     font-weight: 500;
@@ -199,7 +142,22 @@ $black: #363636;
     }
 
     .text {
-      font-size: 26px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .divider {
+      margin-bottom: 100px;
+    }
+
+    .text {
+      font-size: 21px;
     }
   }
 }

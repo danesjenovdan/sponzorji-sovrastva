@@ -1,0 +1,52 @@
+{
+  "razglednice": [
+    {
+      "name": "TELEKOM",
+      "imgSrc": "boter-telekom.jpg",
+      "tweet": "Nove ugodnosti za naše zveste bele naročnike. Poveži se s paketom RASIZEM! Več informacij pri našem partnerju @Demokracija1.",
+      "link": "telekom"
+    },
+    {
+      "name": "POŠTA",
+      "imgSrc": "boter-posta.jpg",
+      "tweet": "Pošlji sovraštvo s pomočjo @nova24! S @posta_slovenije hitro, varno in ugodno.",
+      "link": "posta"
+    },
+    {
+      "name": "T-2",
+      "imgSrc": "boter-t2.jpg",
+      "tweet": "Reši T-2 pred stečajem in preženi migrante s slovenskih izobraževalnih institucij!",
+      "link": "t2"
+    },
+    {
+      "name": "TRIGLAV",
+      "imgSrc": "boter-triglav.jpg",
+      "tweet": "Zavaruj se pred grozotami LGBT! Novi paket @triglavgroup te brani s pomočjo @nova24.",
+      "link": "triglav"
+    },
+    {
+      "name": "MERCATOR",
+      "imgSrc": "boter-mercator.jpg",
+      "tweet": "Radi imamo domače! Vaš najbolj nestrpen sosed @mercator_sl! @nova24",
+      "link": "mercator"
+    },
+    {
+      "name": "TELEMACH",
+      "imgSrc": "boter-telemach.jpg",
+      "tweet": "Novi paketi @TelemachSi Še več, zdaj z neomejenimi količinami sovraštva in nestrpnosti @nova24.",
+      "link": "telemach"
+    },
+    {
+      "name": "PETROL",
+      "imgSrc": "boter-petrol.jpg",
+      "tweet": "Laž za življenje! @petrol in @Demokracija1.",
+      "link": "petrol"
+    },
+    {
+      "name": "SLOVENSKE ŽELEZNICE",
+      "imgSrc": "boter-zeleznice.jpg",
+      "tweet": "S histerijo lažje in hitreje po Sloveniji! Potovanje omogočata @slozeleznice in @nova24.",
+      "link": "slovenske-zeleznice"
+    }
+  ]
+}

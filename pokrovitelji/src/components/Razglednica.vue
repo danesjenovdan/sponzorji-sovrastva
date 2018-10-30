@@ -45,15 +45,15 @@ export default {
     },
     tweet: {
       type: String,
-      default: 'This is the default tweet. It has a #hashtag',
+      default: 'Ustavimo botre sovraštva #protisovraštvu',
     },
     emailSubject: {
       type: String,
-      default: 'This is the default email subject',
+      default: 'Ustavimo botre sovraštva',
     },
     emailContent: {
       type: String,
-      default: 'This is the default email content',
+      default: 'Ustavimo botre sovraštva',
     },
     link: {
       type: String,
@@ -71,7 +71,7 @@ export default {
       window.open(url, '_blank');
     },
     emailShare() {
-      const url = `mailto:?subject=${encodeURIComponent(this.emailSubject)}&body=${encodeURIComponent(this.emailContent)}`;
+      const url = `mailto:?subject=${encodeURIComponent(this.emailSubject)}&body=${encodeURIComponent(`${this.emailContent} ${this.link}`)}`;
       window.open(url, '_blank');
     },
   },

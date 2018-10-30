@@ -37,7 +37,7 @@
           </button>
         </div>
       </div>
-      <p>Danes je nov dan</p>
+      <p><a href="https://danesjenovdan.si/" target="_blank">Danes je nov dan</a></p>
     </div>
   </div>
 </template>
@@ -52,11 +52,12 @@ export default {
   },
 
   data() {
+    const link = `https://danesjenovdan.si${this.baseUrl}`;
     return {
-      link: 'https://danesjenovdan.si/blahblah',
-      tweet: 'This is the default tweet',
-      emailSubject: 'This is the email subject',
-      emailBody: 'This is the email body',
+      link,
+      tweet: 'Ustavimo botre sovraštva #protisovraštvu',
+      emailSubject: 'Ustavimo botre sovraštva',
+      emailBody: 'Ustavimo botre sovraštva',
     };
   },
 
@@ -70,7 +71,7 @@ export default {
       window.open(url, '_blank');
     },
     emailShare() {
-      const url = `mailto:?subject=${encodeURIComponent(this.emailSubject)}&body=${encodeURIComponent(this.emailBody)}`;
+      const url = `mailto:?subject=${encodeURIComponent(this.emailSubject)}&body=${encodeURIComponent(`${this.emailBody} ${this.link}`)}`;
       window.open(url, '_blank');
     },
   },
@@ -170,6 +171,18 @@ body {
           opacity: 1;
           display: block;
         }
+      }
+    }
+
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
