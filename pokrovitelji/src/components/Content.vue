@@ -1,23 +1,31 @@
 <template>
   <div id="content">
     <div class="title">
-      <div id="logo"></div>
-      <p>Botri<br><strong>sovraštva</strong></p>
+      <div id="logo">
+        <img src="../assets/logo-botri.png" />
+      </div>
+      <!-- <p>Botri<br><strong>sovraštva</strong></p> -->
     </div>
 
-    <div class="divider"></div>
+    <div class="divider" style="margin-top: 80px;"></div>
     <p class="text">
       Ne zgolj <strong>politika</strong>, tudi <strong>neodgovorna podjetja</strong> so kriva za
       zaskrbljujoče stanje v naši državi.
     </p>
     <p class="text">
-      Tukaj je seznam tistih, ki posredno podpirajo očitno širjenje strahu, sovraštva, ksenofobije,
-      rasizma, šovinizma in homofobije. Tudi to je pripeljalo do ustanavljanja paravojaških milic po
-      gozdovih in normalizacije sovražnega diskurza.
+      Tukaj je seznam tistih, ki z oglaševalskim denarjem posredno podpirajo očitno širjenje strahu,
+      sovraštva, ksenofobije, rasizma, šovinizma in homofobije. Normalizacija sovražnega diskurza je
+      družbeni problem, na katerega moramo dosledno in glasno opozarjati, namesto da se čudimo
+      ustanavljanju paravojaških milic po gozdovih.
     </p>
     <p class="text">
-      Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo! Deli katerega od
-      spodnjih “oglasov” in pomagaj opozoriti na problem posrednega financiranja sovražne politike.
+      Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo!
+    </p>
+    <p class="text">
+      <strong>
+        Deli katerega od spodnjih “oglasov” in pomagaj opozoriti na problem posrednega financiranja
+        sovražne politike.
+      </strong>
     </p>
 
     <div v-for="rzg in razglednice" :key="rzg.name" class="razglednica-container">
@@ -81,14 +89,23 @@ $black: #363636;
   #logo {
     display: block;
     position: relative;
-    width: 157px;
-    height: 115px;
-    background-image: url('../assets/hate.svg');
+    // width: 500px;
+    // height: 300px;
+    // background-image: url('../assets/logo-botri.png');
     margin: auto;
-    background-position: center;
+    // background-position: center;
+    // background-size: contain;
 
     // TODO HACK POSSIBLY WRONG
-    left: -10px;
+    // left: -10px;
+
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
   }
 
   .title {

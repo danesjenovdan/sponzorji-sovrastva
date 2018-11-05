@@ -2,50 +2,67 @@
   "razglednice": [
     {
       "name": "TELEKOM",
+      "title": "Telekom predstavlja paket RASIZEM",
+      "description": "Neomejen dostop do privilegijev in brezplačna enoletna naročnina na časnik Demokracija!",
       "imgSrc": "boter-telekom.jpg",
-      "tweet": "Nove ugodnosti za naše zveste bele naročnike. Poveži se s paketom RASIZEM! Več informacij pri našem partnerju @Demokracija1.",
+      "tweet": "Novo v ponudbi @TelekomSLO! Posebne ugodnosti za naše bele moške naročnike! #botrisovraštva",
       "link": "telekom"
+
     },
     {
       "name": "POŠTA",
+      "title": "Pošlji SOVRAŠTVO s Pošto Slovenije",
+      "description": "S Pošto Slovenije vaše sovraštvo dostavimo hitro, varno in brez odgovornosti.",
       "imgSrc": "boter-posta.jpg",
-      "tweet": "Pošlji sovraštvo s pomočjo @nova24! S @posta_slovenije hitro, varno in ugodno.",
+      "tweet": "Enkratna promocijska akcija @posta_slovenije! Pošlji svoj paket sovraštva. #botrisovraštva",
       "link": "posta"
     },
     {
       "name": "T-2",
+      "title": "Izkoristite ugodnosti T2 paketa STRAH!",
+      "description": "Predsodki, laži in najnovejše manipulacije. Vse na enem mestu!",
       "imgSrc": "boter-t2.jpg",
-      "tweet": "Reši T-2 pred stečajem in preženi migrante s slovenskih izobraževalnih institucij!",
+      "tweet": "Nov paket @tedvanet! #botrisovraštva",
       "link": "t2"
     },
     {
       "name": "TRIGLAV",
+      "title": "Triglav predstavlja paket HOMOFOBIJA",
+      "description": "Zavarujte se pred grozotami LGBT z novim paketom življenjskega zavarovanja.",
       "imgSrc": "boter-triglav.jpg",
-      "tweet": "Zavaruj se pred grozotami LGBT! Novi paket @triglavgroup te brani s pomočjo @nova24.",
+      "tweet": "Novi paket HOMOFOBIJA pri @triglavgroup vas varuje pred LGBT. #botrisovraštva",
       "link": "triglav"
     },
     {
       "name": "MERCATOR",
+      "title": "Novo v Mercatorju: KSENOFOBIJA!",
+      "description": "100 % brez raznolikosti, 100 % brez odgovornosti: vaš najboljši sosed.",
       "imgSrc": "boter-mercator.jpg",
-      "tweet": "Radi imamo domače! Vaš najbolj nestrpen sosed @mercator_sl! @nova24",
+      "tweet": "V @mercator_sl po dobro mero KSENOFOBIJE! #botrisovraštva",
       "link": "mercator"
     },
     {
       "name": "TELEMACH",
+      "title": "Telemach predstavlja paket ŠOVINIZEM",
+      "description": "Neomejene količine šovinizma in seksizma naravnost v vašo dnevno sobo.",
       "imgSrc": "boter-telemach.jpg",
-      "tweet": "Novi paketi @TelemachSi Še več, zdaj z neomejenimi količinami sovraštva in nestrpnosti @nova24.",
+      "tweet": "Presenetite svojo žensko z novim paketom @telemachsi. #botrisovraštva",
       "link": "telemach"
     },
     {
       "name": "PETROL",
+      "title": "LAŽ, Petrolova energija za življenje!",
+      "description": "Napolnite si glavo z lažmi in manipulacijami.",
       "imgSrc": "boter-petrol.jpg",
-      "tweet": "Laž za življenje! @petrol in @Demokracija1.",
+      "tweet": "Brezskrbno na @Petrol po novo dozo neresnic. #botrisovraštva",
       "link": "petrol"
     },
     {
       "name": "SLOVENSKE ŽELEZNICE",
+      "title": "Posebna ponudba Slovenskih železnic: HISTERIJA",
+      "description": "Potujte noro hitro! Naj vas dejstva ne zadržujejo.",
       "imgSrc": "boter-zeleznice.jpg",
-      "tweet": "S histerijo lažje in hitreje po Sloveniji! Potovanje omogočata @slozeleznice in @nova24.",
+      "tweet": "Vaš zanesljivi strojevodja: @slozeleznice. #botrisovraštva",
       "link": "slovenske-zeleznice"
     }
   ]
