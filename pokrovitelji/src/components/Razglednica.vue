@@ -190,15 +190,21 @@ export default {
     }
 
     .badge {
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      border-radius: 0;
+      height: 40px;
       font-size: 20px;
-      line-height: 70px;
+      line-height: 40px;
+
+      right: 0;
+      bottom: -37px;
 
       &::after {
-        width: 40px;
-        height: 40px;
-        top: -20px;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        margin-left: 10px;
+        display: inline-block;
       }
     }
   }

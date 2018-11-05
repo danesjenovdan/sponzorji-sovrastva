@@ -144,6 +144,10 @@ $black: #363636;
     .text {
       font-size: 28px;
     }
+
+    .razglednica + .text {
+      margin-top: 60px;
+    }
   }
 }
 
