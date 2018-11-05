@@ -2,7 +2,7 @@
   <div id="content">
     <div class="title">
       <div id="logo"></div>
-      <p>Pokrovitelji<br><strong>sovraštva</strong></p>
+      <p>Botri<br><strong>sovraštva</strong></p>
     </div>
 
     <div class="divider"></div>
@@ -93,11 +93,13 @@ $black: #363636;
 
   .title {
     p {
-      font-size: 76px;
+      font-size: 195px;
       text-align: center;
       text-transform: uppercase;
+      line-height: 90px;
 
-      margin-top: 0;
+      margin-top: 30px;
+      margin-bottom: 30px;
 
       strong {
         font-weight: 900;
@@ -133,7 +135,8 @@ $black: #363636;
   @media (max-width: 767px) {
     .title {
       p {
-        font-size: 36px;
+        font-size: 89px;
+        line-height: 46px;
 
         strong {
           font-size: 41px;
