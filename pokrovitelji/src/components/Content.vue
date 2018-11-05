@@ -65,7 +65,7 @@ export default {
 $black: #363636;
 
 #content {
-  max-width: 1680px;
+  max-width: 992px;
   margin: auto;
   padding: 40px;
 
@@ -119,7 +119,7 @@ $black: #363636;
   .text {
     text-align: center;
     max-width: 1200px;
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     margin: auto;
     margin-top: 40px;
@@ -149,15 +149,15 @@ $black: #363636;
 
 @media (max-width: 480px) {
   #content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     .divider {
       margin-bottom: 100px;
     }
 
     .text {
-      font-size: 21px;
+      font-size: 20px;
     }
   }
 }
