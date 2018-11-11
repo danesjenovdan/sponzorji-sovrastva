@@ -160,6 +160,11 @@ export default {
 
       width: 100px;
       height: 100px;
+      
+      @media (max-width: 767px) {
+        width: 70px;
+        height: 70px;
+      }
 
       svg {
         width: 100%;
