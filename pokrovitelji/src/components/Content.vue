@@ -37,7 +37,12 @@
         :emailContent="rzg.tweet"
         :link="getShareLink(rzg.link)"
       />
-      <p class="text" v-text="`${rzg.tweet} ${hashtag}`"></p>
+      <p class="text">
+        <strong style="font-size: 1.1em;">{{ rzg.title }}</strong>
+        <br>
+        <br>
+        {{ rzg.description }}
+      </p>
     </div>
   </div>
 </template>
@@ -79,8 +84,6 @@ $black: #363636;
 
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
-
-  overflow-x: hidden;
 
   strong {
     font-weight: 500;

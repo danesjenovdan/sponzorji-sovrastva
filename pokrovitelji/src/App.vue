@@ -91,6 +91,7 @@ body {
 #app {
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
 
   #footer {
     background-color: $black;
