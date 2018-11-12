@@ -64,6 +64,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'Modal',
   props: {
@@ -85,17 +87,17 @@ export default {
 
   methods: {
     shortenShareLink() {
-      this.$http.post('https://djnd.si/yomamasofat/', {
-        fatmama: this.shareLink,
-      }).then((response) => {
-        // get body data
-        console.log(response);
-        this.shortenedShareLink = response;
-      }, (response) => {
-        // error callback
-        console.log(response);
-        this.shortenedShareLink = this.shareLink;
-      });
+      console.log('ping');
+      axios
+        .post('https://djnd.si/yomamasofat/', `fatmama=${encodeURIComponent(this.shareLink)}`)
+        .then((response) => {
+          this.shortenedShareLink = response.data;
+        })
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.error(error);
+          this.shortenedShareLink = this.shareLink;
+        });
     },
   },
 };
@@ -160,7 +162,7 @@ export default {
 
       width: 100px;
       height: 100px;
-      
+
       @media (max-width: 767px) {
         width: 70px;
         height: 70px;
@@ -188,7 +190,7 @@ export default {
       line-height: 24px;
       padding: 10px;
       font-size: 20px;
-
+      text-align: center;
     }
 
     .modal-close-button {
