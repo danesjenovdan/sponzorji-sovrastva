@@ -30,7 +30,7 @@ export default {
     },
     tweet: {
       type: String,
-      default: 'Ustavimo botre sovraštva #protisovraštvu',
+      default: 'Pomagaj prisiliti odločevalce, da razmislijo, če želijo svojo blagovno znamko res povezovati s sovražnimi vsebinami. #botrisovraštva #brezstrahu @TelekomSlo, @petrol, @TriglavGroup, @mercator_sl, @TelemachSi @radio1slo @tedvanet',
     },
     emailSubject: {
       type: String,

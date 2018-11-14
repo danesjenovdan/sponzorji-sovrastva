@@ -55,7 +55,7 @@ export default {
     const link = `https://danesjenovdan.si${this.baseUrl}`;
     return {
       link,
-      tweet: 'Ustavimo botre sovraštva #protisovraštvu',
+      tweet: 'Pomagaj prisiliti odločevalce, da razmislijo, če želijo svojo blagovno znamko res povezovati s sovražnimi vsebinami. #botrisovraštva #brezstrahu @TelekomSlo, @petrol, @TriglavGroup, @mercator_sl, @TelemachSi @radio1slo @tedvanet',
       emailSubject: 'Ustavimo botre sovraštva',
       emailBody: 'Ustavimo botre sovraštva',
     };
