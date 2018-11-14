@@ -155,8 +155,6 @@ $black: #363636;
   }
 
   @media (max-width: 767px) {
-    padding: 40px;
-
     .title {
       p {
         font-size: 89px;
@@ -170,6 +168,7 @@ $black: #363636;
 
     .text {
       font-size: 28px;
+      padding: 0;
     }
 
     .razglednica + .text {
