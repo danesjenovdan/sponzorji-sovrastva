@@ -26,8 +26,8 @@ razglednice.forEach((rzg) => {
         <meta property="og:title" content="${rzg.title}">
         <meta name="twitter:title" content="${rzg.title}">
 
-        <meta property="og:image" content="https://danesjenovdan.si${baseUrl}razglednice/${rzg.imgSrc}">
-        <meta name="twitter:image" content="https://danesjenovdan.si${baseUrl}razglednice/${rzg.imgSrc}">
+        <meta property="og:image" content="https://danesjenovdan.si${baseUrl}razglednice/${rzg.imgSrc}?cachemeoutside=1">
+        <meta name="twitter:image" content="https://danesjenovdan.si${baseUrl}razglednice/${rzg.imgSrc}?cachemeoutside=1">
 
         <meta property="og:description" content="${rzg.description}">
         <meta name="twitter:description" content="${rzg.description}">
