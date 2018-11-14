@@ -10,14 +10,6 @@
 
     },
     {
-      "name": "POŠTA",
-      "title": "Pošlji SOVRAŠTVO s Pošto Slovenije",
-      "description": "S Pošto Slovenije vaše sovraštvo dostavimo hitro, varno in brez odgovornosti.",
-      "imgSrc": "boter-posta.jpg",
-      "tweet": "Enkratna promocijska akcija @posta_slovenije! Pošlji svoj paket sovraštva. #botrisovraštva",
-      "link": "posta"
-    },
-    {
       "name": "T-2",
       "title": "Izkoristite ugodnosti T2 paketa STRAH!",
       "description": "Predsodki, laži in najnovejše manipulacije. Vse na enem mestu!",
@@ -51,19 +43,19 @@
     },
     {
       "name": "PETROL",
-      "title": "LAŽ, Petrolova energija za življenje!",
-      "description": "Napolnite si glavo z lažmi in manipulacijami.",
+      "title": "HISTERIJA za življenje!",
+      "description": "Petrol poskrbi za energijo, energijo za histerijo!",
       "imgSrc": "boter-petrol.jpg",
-      "tweet": "Brezskrbno na @Petrol po novo dozo neresnic. #botrisovraštva",
+      "tweet": "Novo gorivo sovraštva iz @Petrol. #botrisovraštva",
       "link": "petrol"
     },
     {
-      "name": "SLOVENSKE ŽELEZNICE",
-      "title": "Posebna ponudba Slovenskih železnic: HISTERIJA",
-      "description": "Potujte noro hitro! Naj vas dejstva ne zadržujejo.",
-      "imgSrc": "boter-zeleznice.jpg",
-      "tweet": "Vaš zanesljivi strojevodja: @slozeleznice. #botrisovraštva",
-      "link": "slovenske-zeleznice"
+      "name": "RADIO 1",
+      "title": "Radio 1: na valovih sovraštva",
+      "description": "Naj se sliši glas sovraštva v vsako vas!",
+      "imgSrc": "boter-radio-1.jpg",
+      "tweet": "Več dobre glasbe. Še več sovraštva. @radio1slo #botrisovraštva",
+      "link": "radio-1"
     }
   ]
 }

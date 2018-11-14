@@ -13,18 +13,19 @@
       zaskrbljujoče stanje v naši državi.
     </p>
     <p class="text">
-      Tukaj je seznam tistih, ki z oglaševalskim denarjem posredno podpirajo očitno širjenje strahu,
-      sovraštva, ksenofobije, rasizma, šovinizma in homofobije. Normalizacija sovražnega diskurza je
-      družbeni problem, na katerega moramo dosledno in glasno opozarjati, namesto da se čudimo
-      ustanavljanju paravojaških milic po gozdovih.
+      Tukaj je seznam nekaterih, ki z oglaševalskim denarjem posredno podpirajo očitno širjenje
+      strahu, sovraštva, ksenofobije, rasizma, šovinizma in homofobije.
+    </p>
+    <p class="text">
+      Normalizacija sovražnega diskurza je družbeni problem, na katerega moramo dosledno in glasno opozarjati. Kljub <a href="https://www.dnevnik.si/1042845291/slovenija/svet-evrope-poziva-slovenijo-k-boju-proti-sovraznemu-govoru" target="_blank">priporočilom Sveta Evrope</a> v Sloveniji primanjkuje moralnih zgledov političnih funkcionarjev in ustreznih mehanizmov v pravosodju. Zato je odgovornost civilne družbe, da se postavi po robu razraščanju nevarne in toksične sovražnosti. Namesto da se čudimo ustanavljanju paravojaških milic po gozdovih, se vprašajmo, kje je izvor problema in kaj mu botruje.
     </p>
     <p class="text">
       Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo!
     </p>
     <p class="text">
       <strong>
-        Deli katerega od spodnjih “oglasov” in pomagaj opozoriti na problem posrednega financiranja
-        sovražne politike.
+        Deli katerega od spodnjih "oglasov" in pomagaj prisiliti odločevalce, da razmislijo, če
+        želijo svojo blagovno znamko res povezovati s sovražnimi vsebinami.
       </strong>
     </p>
 
@@ -80,7 +81,7 @@ $black: #363636;
 #content {
   max-width: 992px;
   margin: auto;
-  padding: 40px;
+  padding: 40px 80px;
 
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
@@ -141,10 +142,11 @@ $black: #363636;
   .text {
     text-align: center;
     max-width: 1200px;
-    font-size: 30px;
+    font-size: 26px;
     position: relative;
     margin: auto;
     margin-top: 40px;
+    padding: 0 60px;
   }
 
   .razglednica-container {
@@ -153,6 +155,8 @@ $black: #363636;
   }
 
   @media (max-width: 767px) {
+    padding: 40px;
+
     .title {
       p {
         font-size: 89px;
