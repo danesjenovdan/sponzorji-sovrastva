@@ -35,16 +35,16 @@ export default {
     };
   },
   methods: {
-    fbShare() {
-      const url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(this.link)}&ref=responsive`;
+    fbShare({ link }) {
+      const url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(this.link + link)}&ref=responsive`;
       window.open(url, '_blank');
     },
-    twShare() {
-      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${this.tweet} ${this.link}`)}`;
+    twShare({ link }) {
+      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${this.tweet} ${this.link + link}`)}`;
       window.open(url, '_blank');
     },
-    emailShare() {
-      const url = `mailto:?subject=${encodeURIComponent(this.emailSubject)}&body=${encodeURIComponent(`${this.emailBody} ${this.link}`)}`;
+    emailShare({ link }) {
+      const url = `mailto:?subject=${encodeURIComponent(this.emailSubject)}&body=${encodeURIComponent(`${this.emailBody} ${this.link + link}`)}`;
       window.open(url, '_blank');
     },
   },

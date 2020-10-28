@@ -16,9 +16,9 @@
       <razglednica
         :image="`${baseUrl}razglednice/${razglednica.image}`"
         :share-link="shareLink + razglednica.link"
-        @tw-share="$emit('tw-share')"
-        @fb-share="$emit('fb-share')"
-        @email-share="$emit('email-share')"
+        @tw-share="$emit('tw-share', { link: razglednica.link })"
+        @fb-share="$emit('fb-share', { link: razglednica.link })"
+        @email-share="$emit('email-share', { link: razglednica.link })"
       />
       <p class="source-text">
         <a :href="razglednica.url" target="_blank" rel="noopener noreferrer">Vir</a>
