@@ -110,6 +110,7 @@ export default {
   background-color: rgba(0, 0, 0, .5);
   display: table;
   transition: opacity .3s ease;
+  cursor: auto;
 }
 
 .modal-wrapper {
@@ -149,6 +150,7 @@ export default {
     transition: all 0.3s;
 
     button {
+      display: inline-flex;
       background: transparent;
       border: none;
       cursor: pointer;
@@ -200,6 +202,8 @@ export default {
       background: #000000;
       color: #ffffff;
       font-weight: bold;
+      text-align: center;
+      justify-content: center;
 
       &:hover {
         background: #ffffff;

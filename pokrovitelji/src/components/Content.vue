@@ -39,9 +39,7 @@ export default {
     return {
       baseUrl: process.env.BASE_URL,
       razglednice,
-      hashtag: '#protisovraštvu',
-      emailSubject: 'Ustavimo botre sovraštva',
-      shareLink: `https://danesjenovdan.si${process.env.BASE_URL}`,
+      shareLink: `https://zradirani-metelkova6.si${process.env.BASE_URL}`,
     };
   },
 };
