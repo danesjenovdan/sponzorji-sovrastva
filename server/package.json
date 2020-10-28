@@ -6,12 +6,13 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "author": "danesjenovdan",
   "license": "Unlicense",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
