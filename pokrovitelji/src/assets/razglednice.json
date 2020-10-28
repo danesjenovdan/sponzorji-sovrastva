@@ -3,27 +3,32 @@
     {
       "title": "Španski kralj",
       "url": "https://www.rtvslo.si/kultura/razstave/spanski-kralj-se-prvic-uradno-poda-na-razstavo-na-razstavo-nsk/426163",
-      "image": "izbrisani1.png"
+      "image": "izbrisani1.png",
+      "link": "spanski-kralj"
     },
     {
       "title": "North Korea",
       "url": "https://www.bbc.co.uk/news/world-asia-33995268",
-      "image": "izbrisani2.png"
+      "image": "izbrisani2.png",
+      "link": "north-korea"
     },
     {
       "title": "Uspešna v svetu not",
       "url": "https://old.delo.si/druzba/panorama/violinistka-tanja-sonc-je-note-poznala-pred-crkami.html",
-      "image": "izbrisani3.png"
+      "image": "izbrisani3.png",
+      "link": "uspesna-v-svetu-not"
     },
     {
       "title": "Zlati lev",
       "url": "https://www.24ur.com/cvitkovicu-zlati-lev-prihodnosti.html",
-      "image": "izbrisani4.png"
+      "image": "izbrisani4.png",
+      "link": "zlati-lev"
     },
     {
       "title": "Nagrada Prešernovega sklada",
       "url": "https://old.delo.si/kultura/oder/nagrada-presernovega-sklada-rosana-hribar-gregor-lustek.html",
-      "image": "izbrisani5.png"
+      "image": "izbrisani5.png",
+      "link": "nagrada-presernovega-sklada"
     }
   ]
 }

@@ -15,7 +15,7 @@
       <div class="divider"></div>
       <razglednica
         :image="`${baseUrl}razglednice/${razglednica.image}`"
-        :share-link="shareLink"
+        :share-link="shareLink + razglednica.link"
         @tw-share="$emit('tw-share')"
         @fb-share="$emit('fb-share')"
         @email-share="$emit('email-share')"
