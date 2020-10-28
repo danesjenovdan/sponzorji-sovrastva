@@ -1,6 +1,7 @@
 {
-  "name": "pokrovitelji",
-  "version": "0.1.0",
+  "name": "zradirani-client",
+  "version": "0.0.1",
+  "description": "zradirani-client",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,10 +9,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "node-sass": "^4.9.4",
+    "axios": "^0.21.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.1.0",
-    "vue": "^2.5.17",
+    "vue": "^2.6.12",
     "vue-style-loader": "^4.1.2"
   },
   "devDependencies": {
@@ -19,6 +20,6 @@
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
     "@vue/eslint-config-airbnb": "^3.0.5",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.12"
   }
 }
