@@ -33,6 +33,6 @@ razglednice.forEach((rzg) => {
 
 app.use(`${baseUrl}`, express.static(`${clientPath}/dist`));
 
-app.listen(7001, () => {
-  console.log('Server listening on port 7001');
+app.listen(7331, () => {
+  console.log('Server listening on port 7331');
 });
