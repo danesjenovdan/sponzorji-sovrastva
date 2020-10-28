@@ -2,47 +2,26 @@
   <div id="content">
     <div class="title">
       <div id="logo">
-        <img src="../assets/logo-botri.png" />
+        <img src="../assets/zradirani.gif" />
       </div>
-      <!-- <p>Botri<br><strong>sovraštva</strong></p> -->
     </div>
 
     <div class="divider" style="margin-top: 80px;"></div>
-    <p class="text">
-      Ne zgolj <strong>politika</strong>, tudi <strong>neodgovorna podjetja</strong> so kriva za
-      zaskrbljujoče stanje v naši državi.
-    </p>
-    <p class="text">
-      Tukaj je seznam nekaterih, ki z oglaševalskim denarjem posredno podpirajo očitno širjenje
-      strahu, sovraštva, ksenofobije, rasizma, šovinizma in homofobije.
-    </p>
-    <p class="text">
-      Normalizacija sovražnega diskurza je družbeni problem, na katerega moramo dosledno in glasno opozarjati. Kljub <a href="https://www.dnevnik.si/1042845291/slovenija/svet-evrope-poziva-slovenijo-k-boju-proti-sovraznemu-govoru" target="_blank">priporočilom Sveta Evrope</a> v Sloveniji primanjkuje moralnih zgledov političnih funkcionarjev in ustreznih mehanizmov v pravosodju. Zato je odgovornost civilne družbe, da se postavi po robu razraščanju nevarne in toksične sovražnosti. Namesto da se čudimo ustanavljanju paravojaških milic po gozdovih, se vprašajmo, kje je izvor problema in kaj mu botruje.
-    </p>
-    <p class="text">
-      Zahtevajmo umik oglaševanja podjetij v medijih, ki razpihujejo sovraštvo!
-    </p>
-    <p class="text">
-      <strong>
-        Deli katerega od spodnjih "oglasov" in pomagaj prisiliti odločevalce, da razmislijo, če
-        želijo svojo blagovno znamko res povezovati s sovražnimi vsebinami.
-      </strong>
+    <p class="text lead">
+      Vasko Simoniti bi rad radiral. Pomagali smo mu. Bo tako bolje, minister?
     </p>
 
-    <div v-for="rzg in razglednice" :key="rzg.name" class="razglednica-container">
+    <div v-for="razglednica in razglednice" :key="razglednica.name" class="razglednica-container">
       <div class="divider"></div>
       <razglednica
-        :imgSrc="`${baseUrl}razglednice/${rzg.imgSrc}`"
-        :tweet="`${rzg.tweet} ${hashtag}`"
-        :emailSubject="emailSubject"
-        :emailContent="rzg.tweet"
-        :link="getShareLink(rzg.link)"
+        :image="`${baseUrl}razglednice/${razglednica.image}`"
+        :share-link="shareLink"
+        @tw-share="$emit('tw-share')"
+        @fb-share="$emit('fb-share')"
+        @email-share="$emit('email-share')"
       />
-      <p class="text">
-        <strong style="font-size: 1.1em;">{{ rzg.title }}</strong>
-        <br>
-        <br>
-        {{ rzg.description }}
+      <p class="source-text">
+        <a :href="razglednica.url" target="_blank" rel="noopener noreferrer">Vir</a>
       </p>
     </div>
   </div>
@@ -53,22 +32,17 @@ import Razglednica from './Razglednica.vue';
 import { razglednice } from '../assets/razglednice.json';
 
 export default {
-  name: 'vse',
   components: {
     Razglednica,
   },
   data() {
     return {
-      hashtag: '#protisovraštvu',
-      emailSubject: 'Ustavimo botre sovraštva',
       baseUrl: process.env.BASE_URL,
       razglednice,
+      hashtag: '#protisovraštvu',
+      emailSubject: 'Ustavimo botre sovraštva',
+      shareLink: `https://danesjenovdan.si${process.env.BASE_URL}`,
     };
-  },
-  methods: {
-    getShareLink(link) {
-      return `https://danesjenovdan.si${this.baseUrl}${link}`;
-    },
   },
 };
 </script>
@@ -93,16 +67,7 @@ $black: #363636;
   #logo {
     display: block;
     position: relative;
-    // width: 500px;
-    // height: 300px;
-    // background-image: url('../assets/logo-botri.png');
     margin: auto;
-    // background-position: center;
-    // background-size: contain;
-
-    // TODO HACK POSSIBLY WRONG
-    // left: -10px;
-
     text-align: center;
 
     img {
@@ -118,7 +83,6 @@ $black: #363636;
       text-align: center;
       text-transform: uppercase;
       line-height: 90px;
-
       margin-top: 30px;
       margin-bottom: 30px;
 
@@ -147,6 +111,28 @@ $black: #363636;
     margin: auto;
     margin-top: 40px;
     padding: 0 60px;
+
+    &.lead {
+      font-size: 45px;
+    }
+  }
+
+  .source-text {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+
+    a,
+    a:focus,
+    a:active,
+    a:visited {
+      color: $black;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   .razglednica-container {
@@ -169,6 +155,10 @@ $black: #363636;
     .text {
       font-size: 28px;
       padding: 0;
+
+      &.lead {
+        font-size: 45px;
+      }
     }
 
     .razglednica + .text {
@@ -188,6 +178,10 @@ $black: #363636;
 
     .text {
       font-size: 20px;
+
+      &.lead {
+        font-size: 35px;
+      }
     }
   }
 }

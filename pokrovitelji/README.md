@@ -1,4 +1,4 @@
-# pokrovitelji
+# Zradirani
 
 ## Project setup
 ```

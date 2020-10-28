@@ -15,7 +15,7 @@
                 <h1>Deli</h1>
                 <button
                   class="btn btn-social js-twitter"
-                  @click="$emit('twShare')"
+                  @click="$emit('tw-share')"
                 >
                   <svg width="35" height="35" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                     <!-- eslint-disable-next-line max-len -->
@@ -24,7 +24,7 @@
                 </button>
                 <button
                   class="btn btn-social js-facebook"
-                  @click="$emit('fbShare')"
+                  @click="$emit('fb-share')"
                 >
                   <svg width="35" height="35" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                     <!-- eslint-disable-next-line max-len -->
@@ -33,7 +33,7 @@
                 </button>
                 <button
                   class="btn btn-social js-email"
-                  @click="$emit('emailShare')"
+                  @click="$emit('email-share')"
                 >
                   <svg width="35" height="35" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                     <!-- eslint-disable-next-line max-len -->
@@ -74,20 +74,16 @@ export default {
       required: true,
     },
   },
-
   data() {
     return {
       shortenedShareLink: null,
     };
   },
-
   mounted() {
     this.shortenShareLink();
   },
-
   methods: {
     shortenShareLink() {
-      console.log('ping');
       axios
         .post('https://djnd.si/yomamasofat/', `fatmama=${encodeURIComponent(this.shareLink)}`)
         .then((response) => {

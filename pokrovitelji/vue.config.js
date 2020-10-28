@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: '/botri-sovrastva/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/metelkova6/' : '/',
 };

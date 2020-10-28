@@ -1,61 +1,29 @@
 {
   "razglednice": [
     {
-      "name": "TELEKOM",
-      "title": "Telekom predstavlja paket RASIZEM",
-      "description": "Neomejen dostop do privilegijev in brezplačna enoletna naročnina na časnik Demokracija!",
-      "imgSrc": "boter-telekom.jpg",
-      "tweet": "Novo v ponudbi @TelekomSLO! Posebne ugodnosti za bele moške naročnike! #botrisovraštva",
-      "link": "telekom"
-
+      "title": "Španski kralj",
+      "url": "https://www.rtvslo.si/kultura/razstave/spanski-kralj-se-prvic-uradno-poda-na-razstavo-na-razstavo-nsk/426163",
+      "image": "izbrisani1.png"
     },
     {
-      "name": "T-2",
-      "title": "Izkoristite ugodnosti T2 paketa STRAH!",
-      "description": "Predsodki, laži in najnovejše manipulacije. Vse na enem mestu!",
-      "imgSrc": "boter-t2.jpg",
-      "tweet": "Nov paket @tedvanet! #botrisovraštva",
-      "link": "t2"
+      "title": "North Korea",
+      "url": "https://www.bbc.co.uk/news/world-asia-33995268",
+      "image": "izbrisani2.png"
     },
     {
-      "name": "TRIGLAV",
-      "title": "Triglav predstavlja paket HOMOFOBIJA",
-      "description": "Zavarujte se pred grozotami LGBT z novim paketom življenjskega zavarovanja.",
-      "imgSrc": "boter-triglav.jpg",
-      "tweet": "Novi paket HOMOFOBIJA pri @triglavgroup vas varuje pred LGBT. #botrisovraštva",
-      "link": "triglav"
+      "title": "Uspešna v svetu not",
+      "url": "https://old.delo.si/druzba/panorama/violinistka-tanja-sonc-je-note-poznala-pred-crkami.html",
+      "image": "izbrisani3.png"
     },
     {
-      "name": "MERCATOR",
-      "title": "Novo v Mercatorju: KSENOFOBIJA!",
-      "description": "100 % brez raznolikosti, 100 % brez odgovornosti: vaš najboljši sosed.",
-      "imgSrc": "boter-mercator.jpg",
-      "tweet": "V @mercator_sl po dobro mero KSENOFOBIJE! #botrisovraštva",
-      "link": "mercator"
+      "title": "Zlati lev",
+      "url": "https://www.24ur.com/cvitkovicu-zlati-lev-prihodnosti.html",
+      "image": "izbrisani4.png"
     },
     {
-      "name": "TELEMACH",
-      "title": "Telemach predstavlja paket ŠOVINIZEM",
-      "description": "Neomejene količine šovinizma in seksizma naravnost v vašo dnevno sobo.",
-      "imgSrc": "boter-telemach.jpg",
-      "tweet": "Presenetite svojo žensko z novim paketom @telemachsi. #botrisovraštva",
-      "link": "telemach"
-    },
-    {
-      "name": "PETROL",
-      "title": "HISTERIJA za življenje!",
-      "description": "Petrol poskrbi za energijo, energijo za histerijo!",
-      "imgSrc": "boter-petrol.jpg",
-      "tweet": "Novo gorivo sovraštva iz @Petrol. #botrisovraštva",
-      "link": "petrol"
-    },
-    {
-      "name": "RADIO 1",
-      "title": "Radio 1: na valovih sovraštva",
-      "description": "Naj se sliši glas sovraštva v vsako vas!",
-      "imgSrc": "boter-radio-1.jpg",
-      "tweet": "Več dobre glasbe. Še več sovraštva. @radio1slo #botrisovraštva",
-      "link": "radio-1"
+      "title": "Nagrada Prešernovega sklada",
+      "url": "https://old.delo.si/kultura/oder/nagrada-presernovega-sklada-rosana-hribar-gregor-lustek.html",
+      "image": "izbrisani5.png"
     }
   ]
 }
