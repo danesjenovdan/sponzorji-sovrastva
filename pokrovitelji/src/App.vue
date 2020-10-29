@@ -6,14 +6,18 @@
       @email-share="emailShare"
     />
     <div id="footer">
-      <p>
-        <a href="https://danesjenovdan.si/" target="_blank">
-          <img src="./assets/djnd-logo.svg" alt="Danes je nov dan" />
-        </a>
-        <a href="https://www.cnvos.si/" target="_blank">
-          <img src="./assets/cnvos-logo.png" alt="CNVOS" />
-        </a>
-      </p>
+      <div class="logos">
+        <div class="logo">
+          <a href="https://www.cnvos.si/" target="_blank">
+            <img src="./assets/cnvos-logo.png" alt="CNVOS" />
+          </a>
+        </div>
+        <div class="logo">
+          <a href="https://danesjenovdan.si/" target="_blank">
+            <img src="./assets/djnd-logo.svg" alt="Danes je nov dan" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -79,34 +83,36 @@ $black: #363636;
     padding: 40px;
     margin-top: 100px;
 
-    p {
+    .logos {
       display: flex;
+      flex-direction: column;
       justify-content: center;
 
-      a + a {
-        margin-left: 50px;
-      }
-    }
-
-    a,
-    a:visited,
-    a:active,
-    a:focus {
-      display: flex;
-      justify-content: center;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 4px;
-      border: 4px solid transparent;
-      transition: border-color 0.15s ease-in-out;
-
-      &:hover {
-        border-color: #fff;
+      .logo + .logo {
+        margin-top: 20px;
       }
 
-      img {
-        height: 68px;
+      a,
+      a:visited,
+      a:active,
+      a:focus {
+        display: inline-flex;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        padding: 16px;
+        border-radius: 4px;
+        border: 4px solid transparent;
+        transition: border-color 0.15s ease-in-out;
+
+        &:hover {
+          border-color: #fff;
+        }
+
+        img {
+          height: 60px;
+        }
       }
     }
   }
@@ -115,15 +121,6 @@ $black: #363636;
     #footer {
       font-size: 16px;
       letter-spacing: 0;
-
-      p {
-        flex-direction: column;
-
-        a + a {
-          margin-left: 0;
-          margin-top: 20px;
-        }
-      }
     }
   }
 }
