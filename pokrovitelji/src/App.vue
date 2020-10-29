@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     fbShare({ link }) {
-      const url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(this.link + link)}&ref=responsive`;
+      const url = `https://www.facebook.com/dialog/feed?app_id=3513911532021186&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(this.link + link)}&ref=responsive`;
       window.open(url, '_blank');
     },
     twShare({ link }) {
