@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: botri-sovrastva-deployment
+  labels:
+    app: botri-sovrastva
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: botri-sovrastva
+  template:
+    metadata:
+      labels:
+        app: botri-sovrastva
+    spec:
+      containers:
+      - name: botri-sovrastva
+        image: rg.fr-par.scw.cloud/djnd/botri-sovrastva:latest
+        ports:
+        - containerPort: 7001

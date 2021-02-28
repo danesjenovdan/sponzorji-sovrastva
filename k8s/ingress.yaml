@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: botri-sovrastva-ingress
+spec:
+  rules:
+  - host: mato.k8s.djnd.si
+    http:
+      paths:
+      - path: /botri-sovrastva/
+        pathType: Prefix
+        backend:
+          service:
+            name: botri-sovrastva
+            port:
+              number: 7001
