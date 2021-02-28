@@ -11,11 +11,11 @@
   "author": "Danes je nov dan <filip@danesjenovdan.si>",
   "license": "Unlicense",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.1",
-    "request": "^2.83.0",
-    "request-promise-native": "^1.0.5",
-    "webshot": "^0.18.0"
+    "cheerio": "^1.0.0-rc.5",
+    "ejs": "^3.1",
+    "express": "^4.17",
+    "request": "^2.88",
+    "request-promise-native": "^1.0",
+    "webshot": "^0.18"
   }
 }
