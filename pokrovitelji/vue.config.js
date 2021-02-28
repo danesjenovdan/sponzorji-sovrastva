@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: '/botri-sovrastva/',
+  publicPath: '/botri-sovrastva/',
 };

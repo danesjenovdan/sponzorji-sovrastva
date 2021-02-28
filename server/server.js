@@ -10,7 +10,7 @@ const vueConfig = require('../pokrovitelji/vue.config');
 
 // Load index.html
 const indexHtml = fs.readFileSync(`${clientPath}/dist/index.html`, 'utf8');
-const baseUrl = vueConfig.baseUrl;
+const baseUrl = vueConfig.publicPath;
 const razglednice = razgledniceJson.razglednice;
 
 razglednice.forEach((rzg) => {

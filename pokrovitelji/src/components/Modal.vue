@@ -87,7 +87,6 @@ export default {
 
   methods: {
     shortenShareLink() {
-      console.log('ping');
       axios
         .post('https://djnd.si/yomamasofat/', `fatmama=${encodeURIComponent(this.shareLink)}`)
         .then((response) => {
