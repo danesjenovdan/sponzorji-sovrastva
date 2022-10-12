@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zradirani
+  labels:
+    app: zradirani
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zradirani
+  template:
+    metadata:
+      labels:
+        app: zradirani
+    spec:
+      containers:
+      - name: zradirani
+        image: rg.fr-par.scw.cloud/djnd/zradirani:latest
+        ports:
+        - containerPort: 7331
