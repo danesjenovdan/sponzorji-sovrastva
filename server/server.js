@@ -19,9 +19,9 @@ razglednice.forEach((rzg) => {
       const $ = cheerio.load(indexHtml);
       $('.removeme').remove();
       $('head').append(`
-        <meta property="og:url" content="https://zradirani-metelkova6.si${baseUrl}${rzg.link}">
-        <meta property="og:image" content="https://zradirani-metelkova6.si${baseUrl}razglednice/${rzg.image}">
-        <meta name="twitter:image" content="https://zradirani-metelkova6.si${baseUrl}razglednice/${rzg.image}">
+        <meta property="og:url" content="https://zradirani-metelkova6.lb.djnd.si${baseUrl}${rzg.link}">
+        <meta property="og:image" content="https://zradirani-metelkova6.lb.djnd.si${baseUrl}razglednice/${rzg.image}">
+        <meta name="twitter:image" content="https://zradirani-metelkova6.lb.djnd.si${baseUrl}razglednice/${rzg.image}">
       `);
       res.send($.html());
     } catch (err) {
