@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: zradirani
-        image: rg.fr-par.scw.cloud/djnd/zradirani:latest
+        image: zradirani
         ports:
         - containerPort: 7331
