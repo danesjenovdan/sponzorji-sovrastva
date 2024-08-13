@@ -8,4 +8,4 @@ resources:
 images:
   - name: botri-sovrastva
     newName: rg.fr-par.scw.cloud/djnd/botri-sovrastva
-    newTag: "latest"
+    newTag: 'ccc0d20443be22c803b340d7971f4297d168475f'
