@@ -52,7 +52,7 @@ export default {
   },
 
   data() {
-    const link = `https://danesjenovdan.si${process.env.BASE_URL}`;
+    const link = `https://botri-sovrastva.danesjenovdan.si${process.env.BASE_URL}`;
     return {
       link,
       tweet: 'Pomagaj prisiliti odločevalce, da razmislijo, če želijo svojo blagovno znamko res povezovati s sovražnimi vsebinami. #botrisovraštva #brezstrahu @TelekomSlo, @petrol, @TriglavGroup, @mercator_sl, @TelemachSi @radio1slo @tedvanet',

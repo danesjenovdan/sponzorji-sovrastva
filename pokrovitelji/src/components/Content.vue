@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     getShareLink(link) {
-      return `https://danesjenovdan.si${this.baseUrl}${link}`;
+      return `https://botri-sovrastva.danesjenovdan.si${this.baseUrl}${link}`;
     },
   },
 };

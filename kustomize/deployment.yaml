@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: botri-sovrastva
+  labels:
+    app: botri-sovrastva
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: botri-sovrastva
+  template:
+    metadata:
+      labels:
+        app: botri-sovrastva
+    spec:
+      containers:
+        - name: botri-sovrastva
+          image: botri-sovrastva
+          ports:
+            - containerPort: 7001
+          resources:
+            requests:
+              memory: 250Mi
+              cpu: 100m
+            limits:
+              memory: 250Mi
+              cpu: 100m
