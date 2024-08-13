@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: botri-sovrastva
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - botri-sovrastva.djnd.si
+        - botri-sovrastva.danesjenovdan.si
+      secretName: botri-sovrastva-tls
+  rules:
+    - host: botri-sovrastva.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: botri-sovrastva
+                port:
+                  number: 7001
+    - host: botri-sovrastva.danesjenovdan.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: botri-sovrastva
+                port:
+                  number: 7001
