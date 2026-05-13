@@ -7,11 +7,12 @@ metadata:
 spec:
   tls:
     - hosts:
-        - zradirani-metelkova6.lb.djnd.si
+        - zradirani-metelkova6.djnd.si
+        - zradirani-metelkova6.danesjenovdan.si
       secretName: zradirani-tls
   rules:
-    - host: zradirani-metelkova6.lb.djnd.si
-      http:
+    - host: zradirani-metelkova6.djnd.si
+      http: &http_paths
         paths:
           - path: /
             pathType: Prefix
@@ -20,3 +21,5 @@ spec:
                 name: zradirani
                 port:
                   number: 80
+    - host: zradirani-metelkova6.danesjenovdan.si
+      http: *http_paths

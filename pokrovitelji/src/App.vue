@@ -30,7 +30,7 @@ export default {
     AppContent,
   },
   data() {
-    const link = `https://zradirani-metelkova6.si${process.env.BASE_URL}`;
+    const link = `https://zradirani-metelkova6.djnd.si${process.env.BASE_URL}`;
     return {
       link,
       tweet: 'Vasko Simoniti bi rad radiral. Bo tako bolje, minister? #zradirani #metelkova6',

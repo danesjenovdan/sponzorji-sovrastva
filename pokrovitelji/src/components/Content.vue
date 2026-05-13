@@ -39,7 +39,7 @@ export default {
     return {
       baseUrl: process.env.BASE_URL,
       razglednice,
-      shareLink: `https://zradirani-metelkova6.si${process.env.BASE_URL}`,
+      shareLink: `https://zradirani-metelkova6.djnd.si${process.env.BASE_URL}`,
     };
   },
 };
