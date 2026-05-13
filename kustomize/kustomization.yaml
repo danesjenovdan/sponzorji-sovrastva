@@ -8,4 +8,4 @@ resources:
 images:
   - name: zradirani
     newName: rg.fr-par.scw.cloud/djnd/zradirani
-    newTag: 'd79c045e170568ffa11be4c2a98472323af6912b'
+    newTag: '7cbba73431ed065848623191772fdeddfdcd834f'
