@@ -3,19 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "start": "echo \"Error: no start specified\" && exit 1",
-    "deploy": "echo \"Error: no deploy specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Danes je nov dan <filip@danesjenovdan.si>",
   "license": "Unlicense",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.5",
-    "ejs": "^3.1",
-    "express": "^4.17",
-    "request": "^2.88",
-    "request-promise-native": "^1.0",
-    "webshot": "^0.18"
+    "cheerio": "^1.2.0",
+    "express": "^5.3"
   }
 }
