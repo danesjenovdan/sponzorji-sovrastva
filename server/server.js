@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const cheerio = require('cheerio');
 const fs = require('fs');
-const _ = require('lodash');
 
 const clientPath = `${__dirname}/../pokrovitelji`;
 const razgledniceJson = require('../pokrovitelji/src/assets/razglednice.json')

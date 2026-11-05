@@ -11,11 +11,11 @@
   "author": "danesjenovdan",
   "license": "Unlicense",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "cross-env": "^7.0.2",
-    "express": "^4.17.1"
+    "cheerio": "^1.2.0",
+    "cross-env": "^10.1.0",
+    "express": "^5.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^3.1.14"
   }
 }

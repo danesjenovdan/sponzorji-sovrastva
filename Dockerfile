@@ -1,22 +1,30 @@
 # start with the nodejs image, calling it 'build'
-FROM node:14-alpine
-EXPOSE 7331
-
-# install node modules
-COPY pokrovitelji/package.json pokrovitelji/package-lock.json /pokrovitelji/
-COPY server/package.json server/package-lock.json /server/
+FROM node:14-alpine AS build
 
 WORKDIR /pokrovitelji
-RUN npm install
-WORKDIR /server
-RUN npm install
+COPY pokrovitelji/package.json pokrovitelji/package-lock.json ./
+RUN npm ci
 
-# build assets
-WORKDIR /pokrovitelji
 COPY pokrovitelji .
 RUN npm run build
 
-# start server
+FROM node:26-alpine
+
+# install tini
+RUN apk add --no-cache tini
+ENTRYPOINT ["/sbin/tini", "--"]
+
+# copy built files (and config/json needed for server)
+COPY --from=build /pokrovitelji/dist /pokrovitelji/dist
+COPY --from=build /pokrovitelji/public /pokrovitelji/public
+COPY --from=build /pokrovitelji/vue.config.js /pokrovitelji/vue.config.js
+COPY --from=build /pokrovitelji/src/assets/razglednice.json /pokrovitelji/src/assets/razglednice.json
+
 WORKDIR /server
+COPY server/package.json server/package-lock.json ./
+RUN npm ci
+
 COPY server .
+EXPOSE 7331
+
 CMD ["node", "server.js"]
